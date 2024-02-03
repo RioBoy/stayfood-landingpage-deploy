@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    position: relative;
+}
+
+.wp-image-hero {
+    img {
+        @apply w-full h-[420px] xxl:h-[500px] object-contain object-center;
+    }
+}
+
+.image-submenu {
+    @apply w-[120px] h-[120px] object-contain object-center;
+}
+
+.btn-style-primary {
+    @apply py-3 px-10 rounded-[50px] hover:opacity-80 transition duration-300;
+}
+
+.btn-order-now {
+    box-shadow: 0px 35px 40px 0px rgba(246, 201, 55, 0.30);
+}
+
+.shadow-card-menu {
+    box-shadow: 0px 10px 25px 0px rgba(152, 149, 149, 0.30);
+}
+
+a {
+    &.btn-order-submenu {
+        &::after {
+            content: '';
+            display: block;
+            margin-top: 5px;
+            width: 78px;
+            border: 1px solid #f6c937;
+        }
+    }
+}
+
+.icon-cart {
+    @apply bg-aragon-500 pt-2 pl-2 pr-4 pb-4 rounded-tl-[15px] rounded-tr-[15px] rounded-br-[50px] rounded-bl-[15px];
+}
